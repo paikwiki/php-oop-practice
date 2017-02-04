@@ -1,4 +1,0 @@
-{"model":"Post","title":"Lorem ipsum dolor sit"}
-{"model":"Post","title":"Duis dolor in reprehenderit"}
-{"model":"Post","title":"Lorem ipsum dolor\n    sit"}
-{"model":"Post","title":"Duis dolor in reprehenderit"}
