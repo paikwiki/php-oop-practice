@@ -1,10 +1,12 @@
 <?php
 
+require 'ArrayStorage.php';
+
 abstract class Writing
 {
     protected $storage;
     protected $title;
-    public $viewCount = 0;
+    protected $viewCount = 0;
 
     public function __construct($title, StorageInterface $storage)
     {
@@ -12,12 +14,11 @@ abstract class Writing
         $this->storage = $storage;
     }
 
-    protected function setTitle($title)
+    public function setTitle($title)
     {
-        if (strlen($title) < 10) {
-            throw new Exception('10 글자보다 긴 제목을 입력해 주세요');
+        if (strlen($title)<10 ) {
+            throw new Exception('10글자보다 긴 글을 입력해 주세요.');
         }
-
         $this->title = $title;
     }
 

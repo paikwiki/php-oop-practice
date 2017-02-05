@@ -1,12 +1,10 @@
 <?php
 
 require 'Writing.php';
-//require 'ArrayStorage.php';
 require 'FileStorage.php';
 
 class Post extends Writing
 {
-
     public function save()
     {
         $this->storage->put([
@@ -16,15 +14,36 @@ class Post extends Writing
     }
 }
 
-//$post = new Post('foo title....');
-//$post->setTitle('short');
-//$post->title;
-//$post->getTitle();
-
-//(new Post('Lorem ipsum dolor sit'))->save();
+$storage = new FileStorage;
+(new Post('Glutens assimilant!', $storage))->save();
+(new Post('Genetrix velums, tanquam pius zelus.', $storage))->save();
+var_dump($storage->collection());
 
 //$storage = new ArrayStorage;
-$storage = new FileStorage;
-(new Post('Lorem ipsum dolor sit', $storage))->save();
-(new Post('Duis dolor in reprehenderit', $storage))->save();
-var_dump($storage->collection());
+//(new Post('Glutens assimilant!', $storage))->save();
+//(new Post('Genetrix velums, tanquam pius zelus.', $storage))->save();
+//var_dump($storage->collection());
+
+//(new Post('Ire unus ducunt ad bassus torquis.'))->save();
+
+//$post = new Post('for title....');
+////$post->setTitle('short');
+//$post->title;
+//echo $post->getTitle();
+
+//$post = new Post('for title....');
+//echo $post->getTitle();
+
+//$post = new Post('for title');
+//$post->increaseViewCount();
+//$post->increaseViewCount();
+//var_dump($post);
+
+//$post = new Post('for title');
+//echo $post->title;
+
+//$post = new Post();
+//$post->title = 'for title';
+//echo $post->title;
+
+

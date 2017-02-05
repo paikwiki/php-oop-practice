@@ -10,4 +10,4 @@ class Article extends Post
     }
 }
 
-echo(new Article('Lorem ipsum dolor sit amet'))->getTitle();
+//echo (new Article('Brodiums potus!'))->getTitle();
