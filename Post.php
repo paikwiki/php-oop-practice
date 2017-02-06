@@ -4,7 +4,7 @@ require 'Writing.php';
 
 class Post extends Writing
 {
-    function save()
+    public function save()
     {
         $this->storage->put([
             'model' => __CLASS__,
