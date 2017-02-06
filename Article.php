@@ -10,4 +10,5 @@ class Article extends Post
     }
 }
 
-//echo (new Article('Brodiums potus!'))->getTitle();
+//$article = new Article('Tumultumques ridetis!');
+//echo $article->getTitle();

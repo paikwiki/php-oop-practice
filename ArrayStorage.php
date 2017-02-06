@@ -1,6 +1,8 @@
 <?php
 
-class ArrayStorage
+require 'StorageInterface.php';
+
+class ArrayStorage implements StorageInterface
 {
     protected $collection = [];
 
