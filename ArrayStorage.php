@@ -2,7 +2,7 @@
 
 require 'StorageInterface.php';
 
-class ArrayStorage implements StorageInterface0
+class ArrayStorage implements StorageInterface
 {
     public $collection;
 
