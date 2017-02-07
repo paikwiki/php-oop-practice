@@ -1,7 +1,5 @@
 <?php
 
-require 'StorageInterface.php';
-
 class FileStorage implements StorageInterface
 {
     public function put($item)
@@ -15,8 +13,8 @@ class FileStorage implements StorageInterface
         $lines = explode(PHP_EOL, file_get_contents('storage.txt'));
 
         foreach($lines as $line) {
-            if (! $line) continue;
-            $collection[] = json_decode($line);
+            if(! $line) continue;
+            $collection[] = json_encode($line);
         }
 
         return $collection;

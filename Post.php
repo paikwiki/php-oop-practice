@@ -1,6 +1,8 @@
 <?php
 
 require 'Writing.php';
+require 'FileStorage.php';
+//require 'ArrayStorage.php';
 
 class Post extends Writing
 {
@@ -14,28 +16,21 @@ class Post extends Writing
 }
 
 $storage = new FileStorage;
-(new Post('Tumultumques ridetis!', $storage))->save();
-(new Post('Bromiums ortum!', $storage))->save();
+
+(new Post('Nunquam resuscitabo classis.', $storage))->save();
+(new Post('Peregrinationes mechanice ducunt ad germanus heuretes.', $storage))->save();
 var_dump($storage->collection());
 
-//$storage = new ArrayStorage;
-//(new Post('Tumultumques ridetis!', $storage))->save();
-//(new Post('Bromiums ortum!', $storage))->save();
-//var_dump($storage->collection());
+//(new Post('Nunquam reperire impositio?'))->save();
 
-//(new Post('Tumultumques ridetis!'))->save();
-
-//$post = new Post('Tumultumques ridetis!');
-//echo $post->getTitle();
-
-//$post = new Post('Teres detrius absolute falleres bursa est.');
+//$post = new Post('Nunquam reperire impositio?');
 //$post->increaseViewCount();
 //$post->increaseViewCount();
 //var_dump($post);
 
-//$post = new Post('Zetas nocere, tanquam festus itineris tramitem.');
+//$post = new Post('Cur sectam messis?');
 //echo $post->title;
 
 //$post = new Post;
-//$post->title = 'Zetas nocere, tanquam festus itineris tramitem.';
+//$post->title = 'Cur sectam messis?';
 //echo $post->title;

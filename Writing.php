@@ -1,14 +1,13 @@
 <?php
 
-//require 'ArrayStorage.php';
-require 'FileStorage.php';
+require 'StorageInterface.php';
 
 abstract class Writing
 {
-    protected $title;
-    protected $storage;
-    protected $viewCount=0;
-
+    public $title;
+    public $storage;
+    protected $viewCount;
+  
     public function __construct($title, StorageInterface $storage)
     {
         $this->setTitle($title);
