@@ -4,10 +4,10 @@ require 'StorageInterface.php';
 
 abstract class Writing
 {
-    public $title;
-    public $storage;
-    protected $viewCount;
-  
+    protected $title;
+    protected $storage;
+    public $viewCount = 0;
+
     public function __construct($title, StorageInterface $storage)
     {
         $this->setTitle($title);
@@ -25,7 +25,7 @@ abstract class Writing
 
     public function getTitle()
     {
-        return $this->title;
+        return ucfirst($this->title);
     }
 
     public function increaseViewCount()

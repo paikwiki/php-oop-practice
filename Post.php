@@ -1,8 +1,8 @@
 <?php
 
 require 'Writing.php';
-require 'FileStorage.php';
 //require 'ArrayStorage.php';
+require 'FileStorage.php';
 
 class Post extends Writing
 {
@@ -16,21 +16,28 @@ class Post extends Writing
 }
 
 $storage = new FileStorage;
-
-(new Post('Nunquam resuscitabo classis.', $storage))->save();
-(new Post('Peregrinationes mechanice ducunt ad germanus heuretes.', $storage))->save();
+(new Post('Sunt ionicis tormentoes transferre nobilis, rusticus galataees.', $storage))->save();
+(new Post('Sunt ventuses imperium nobilis, salvus urbses.', $storage))->save();
 var_dump($storage->collection());
 
-//(new Post('Nunquam reperire impositio?'))->save();
+//$storage = new ArrayStorage;
+//(new Post('Sunt ionicis tormentoes transferre nobilis, rusticus galataees.', $storage))->save();
+//(new Post('Sunt ventuses imperium nobilis, salvus urbses.', $storage))->save();
+//var_dump($storage->collection());
 
-//$post = new Post('Nunquam reperire impositio?');
+//$post = new Post('Turpis, cannabis, et detrius.');
+//$post->save();
+//$post = new Post('Fidess volare, tanquam festus parma.');
+//echo $post->getTitle();
+
+//$post = new Post('Nunquam experientia axona?');
 //$post->increaseViewCount();
 //$post->increaseViewCount();
 //var_dump($post);
 
-//$post = new Post('Cur sectam messis?');
+//$post = new Post('Cur silva prarere?');
 //echo $post->title;
 
 //$post = new Post;
-//$post->title = 'Cur sectam messis?';
+//$post->title = 'Cur silva prarere?';
 //echo $post->title;
