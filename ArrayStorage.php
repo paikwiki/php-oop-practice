@@ -15,5 +15,4 @@ class ArrayStorage implements StorageInterface
     {
         return $this->collection;
     }
-
 }
