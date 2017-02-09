@@ -10,5 +10,5 @@ class Article extends Post
     }
 }
 
-//$article = new Article('A falsis, gemna emeritis finis.');
+//$article = new Article('Placidus coordinatae absolute apertos guttus est.');
 //echo $article->getTitle();

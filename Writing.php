@@ -6,7 +6,7 @@ abstract class Writing
 {
     protected $title;
     protected $storage;
-    public $viewCount = 0;
+    protected $viewCount = 0;
 
     public function __construct($title, StorageInterface $storage)
     {
@@ -14,9 +14,9 @@ abstract class Writing
         $this->storage = $storage;
     }
 
-    protected function setTitle($title)
+    public function setTitle($title)
     {
-        if (strlen($title)<10)
+        if(strlen($title)<10)
         {
             throw new Exception('10글자보다 길게 입력해 주세요.');
         }
