@@ -4,7 +4,7 @@ require 'StorageInterface.php';
 
 class ArrayStorage implements StorageInterface
 {
-    protected $collectoion = [];
+    protected $collection = [];
 
     public function put($item)
     {

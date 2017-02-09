@@ -31,6 +31,7 @@ var_dump($storage->collection());
 //echo $post->getTitle();
 
 //$post = new Post('Sunt brabeutaes imperium ferox, fortis caculaes.');
+
 //$post->increaseViewCount();
 //$post->increaseViewCount();
 //var_dump($post);
