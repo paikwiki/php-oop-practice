@@ -1,5 +1,4 @@
 <?php
-
 require 'Post.php';
 
 class Article extends Post
