@@ -1,5 +1,7 @@
 <?php
 
+require 'StorageInterface.php';
+
 abstract class Writing
 {
     protected $title;
@@ -38,5 +40,5 @@ abstract class Writing
         $this->viewCount += 1;
     }
 
-    abstract function save();
+    abstract public function save();
 }
