@@ -1,5 +1,4 @@
 <?php
-
 require 'Writing.php';
 //require 'ArrayStorage.php';
 require 'FileStorage.php';

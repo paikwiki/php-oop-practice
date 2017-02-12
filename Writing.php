@@ -15,24 +15,24 @@ abstract class Writing
     }
 
     /**
-     * @param mixed $title
-     * @throws Exception
-     */
-    protected function setTitle($title)
-    {
-        if(strlen($title)<10)
-        {
-            throw new Exception('10글자보다 길게 입력하세요');
-        }
-        $this->title = $title;
-    }
-
-    /**
      * @return mixed
      */
     public function getTitle()
     {
         return ucfirst($this->title);
+    }
+
+    /**
+     * @param mixed $title
+     * @throws Exception
+     */
+    public function setTitle($title)
+    {
+        if(strlen($title)<10)
+        {
+            throw new Exception('10글자보다 길게 입력해 주세요.');
+        }
+        $this->title = $title;
     }
 
     public function increaseViewCount()
