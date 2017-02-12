@@ -13,3 +13,10 @@ class Post extends Writing
         ]);
     }
 }
+
+//$storage = new ArrayStorage;
+$storage = new FileStorage;
+
+(new Post('Nunquam anhelare caesium.', $storage))->save();
+(new Post('Cur lacta mori.', $storage))->save();
+var_dump($storage->collection());

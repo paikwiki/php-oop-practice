@@ -12,7 +12,6 @@ class FileStorage implements StorageInterface
     {
         $collection = [];
         $lines = explode(PHP_EOL, file_get_contents('storage.txt'));
-
         foreach($lines as $line)
         {
             if(! $line) continue;
