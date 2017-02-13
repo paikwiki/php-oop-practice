@@ -26,7 +26,7 @@ abstract class Writing
      * @param mixed $title
      * @throws Exception
      */
-    public function setTitle($title)
+    protected function setTitle($title)
     {
         if(strlen($title)<10)
         {
