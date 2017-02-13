@@ -1,5 +1,7 @@
 <?php
 
+require 'StorageInterface.php';
+
 abstract class Writing
 {
     protected $title;
@@ -39,5 +41,4 @@ abstract class Writing
     }
 
     abstract public function save();
-
 }
