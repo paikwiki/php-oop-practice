@@ -1,6 +1,5 @@
 <?php
 require 'Writing.php';
-//require 'ArrayStorage.php';
 require 'FileStorage.php';
 
 class Post extends Writing
@@ -14,9 +13,8 @@ class Post extends Writing
     }
 }
 
-//$storage = new ArrayStorage;
 $storage = new FileStorage;
+(new Post('Ubi est azureus onus?', $storage))->save();
+(new Post('Ubi est noster apolloniates?', $storage))->save();
 
-(new Post('Nunquam anhelare caesium.', $storage))->save();
-(new Post('Cur lacta mori.', $storage))->save();
 var_dump($storage->collection());
