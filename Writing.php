@@ -4,6 +4,9 @@ require 'StorageInterface.php';
 
 abstract class Writing
 {
+    /**
+     * @var
+     */
     protected $title;
     protected $storage;
     protected $viewCount = 0;
