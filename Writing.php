@@ -1,5 +1,7 @@
 <?php
 
+require 'StorageInterface.php';
+
 abstract class Writing
 {
     protected $title;
@@ -22,6 +24,7 @@ abstract class Writing
 
     /**
      * @param mixed $title
+     * @throws Exception
      */
     protected function setTitle($title)
     {

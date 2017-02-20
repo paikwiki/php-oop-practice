@@ -8,3 +8,6 @@ class Article extends Post
         return str_replace(' ', '_', $this->title);
     }
 }
+
+//$article = new Article('Placidus coordinatae absolute apertos guttus est.');
+//echo $article->getTitle();
