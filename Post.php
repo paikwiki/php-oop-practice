@@ -14,7 +14,6 @@ class Post extends Writing
 }
 
 $storage = new FileStorage;
-(new Post('Ubi est azureus onus?', $storage))->save();
-(new Post('Ubi est noster apolloniates?', $storage))->save();
-
+(new Post('Est magnum advena, cesaris!', $storage))->save();
+(new Post('Est brevis musa, cesaris!', $storage))->save();
 var_dump($storage->collection());
