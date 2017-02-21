@@ -1,2 +1,2 @@
-{"model":"Post","title":"Est magnum advena, cesaris!"}
-{"model":"Post","title":"Est brevis musa, cesaris!"}
+{"model":"Post","title":"Compaters messis, tanquam primus visus."}
+{"model":"Post","title":"A falsis, exsul neuter elevatus."}

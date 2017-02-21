@@ -39,6 +39,6 @@ abstract class Writing
     {
         $this->viewCount += 1;
     }
-    
+
     abstract public function save();
 }
