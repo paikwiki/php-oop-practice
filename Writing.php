@@ -6,7 +6,7 @@ abstract class Writing
 {
     protected $title;
     protected $storage;
-    protected $viewCount = 0;
+    public $viewCount = 0;
 
     public function __construct($title, StorageInterface $storage)
     {
@@ -17,7 +17,7 @@ abstract class Writing
     /**
      * @return mixed
      */
-    public function getTitle()
+    protected function getTitle()
     {
         return ucfirst($this->title);
     }

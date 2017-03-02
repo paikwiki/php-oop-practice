@@ -3,7 +3,7 @@ require 'Post.php';
 
 class Article extends Post
 {
-    public function getTitle()
+    protected function getTitle()
     {
         return str_replace(' ', '_', $this->title);
     }
