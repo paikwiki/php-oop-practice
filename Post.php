@@ -12,9 +12,3 @@ class Post extends Writing
         ]);
     }
 }
-
-$storage = new FileStorage;
-(new Post('Accentor, imber, et brodium.', $storage))->save();
-(new Post('Ubi est germanus cobaltum.', $storage))->save();
-
-var_dump($storage->collection());
