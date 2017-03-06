@@ -1,5 +1,7 @@
 <?php
 
+require 'StorageInterface.php';
+
 abstract class Writing
 {
     protected $title;
@@ -26,7 +28,7 @@ abstract class Writing
      */
     protected function setTitle($title)
     {
-        if(strlen($title)<10)
+        if(strlen($title) < 10)
         {
             throw new Exception('10글자보다 길게 입력해 주세요.');
         }
