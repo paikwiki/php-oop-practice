@@ -1,2 +1,2 @@
-{"model":"Post","title":"Magnum adiurator semper captiss devatio est."}
-{"model":"Post","title":"Rumors sunt fortiss de germanus calcaria."}
+{"model":"Post","title":"Volare recte ducunt ad neuter castor."}
+{"model":"Post","title":"Silvas cantare, tanquam salvus pes."}
