@@ -1,10 +1,12 @@
 <?php
 
+require 'StorageInterface.php';
+
 abstract class Writing
 {
     protected $title;
     protected $storage;
-    protected $viewCount = 0;
+    public $viewCount = 0;
 
     public function __construct($title, StorageInterface $storage)
     {
