@@ -1,10 +1,15 @@
 <?php
 require 'Post.php';
 
-class Article extends Post
+require 'Post.php';
+
+class Article extends  Post
 {
-    protected function getTitle()
+    public function getTitle()
     {
         return str_replace(' ', '_', $this->title);
     }
+
 }
+
+echo (new Article('Lorem ipsum dolor sit amet'))->getTitle().PHP_EOL;
