@@ -1,0 +1,2 @@
+{"model":"Post","title":"Lorem ipsum dolor sit amet"}
+{"model":"Post","title":"Duis dolor in reprehenderit"}
